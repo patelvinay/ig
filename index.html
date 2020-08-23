@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinay Patel - Github - Instagram</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vinay Patel - instagram - github</title>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
 </head>
+<!----------------------------------------------------------------------- css -------------------------------->
 <style>
     body {
     --primary: 25,91,255;
@@ -235,110 +235,290 @@
     font-size: .8rem;
 }
 </style>
-<script>
-const user = document.querySelector('.con-user')
-const menu = document.querySelector('.con-menu')
-const contents = document.querySelector('.con-contents')
-const links = document.querySelector('.con-contents .con-links')
-const posts = document.querySelector('.con-contents .con-posts')
-window.addEventListener("load", function(event) {
-    const vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--vh', `${vh}px`)
 
-    setTimeout(function () {
-    window.scrollTo(0, 1)
-    }, 0)
-    const h = window.innerHeight - menu.clientHeight - user.clientHeight
-    contents.style.height = `${h}px`
-    links.style.height = `${h}px`
-    posts.style.height = `${h}px`
-})
-
-function handleClick(evt, name) {
-    const items = document.querySelectorAll('.con-menu button')
-    const el = evt.target
-    items.forEach((item) => {
-        item.classList.remove('active')
-    })
-    el.classList.add('active')
-    const elScroll = document.querySelector(`.${name}`)
-    contents.scrollTo(elScroll.offsetLeft, 0)
-}
-
-contents.addEventListener('scroll', (evt) => {
-    if (evt.target.scrollLeft > window.innerWidth / 2 && evt.target.scrollLeft < window.innerWidth + (window.innerWidth / 2)) {
-        menu.querySelector('button:nth-child(1)').classList.remove('active')
-        menu.querySelector('button:nth-child(2)').classList.add('active')
-        menu.querySelector('button:nth-child(3)').classList.remove('active')
-    } else if (evt.target.scrollLeft < window.innerWidth / 2) {
-        menu.querySelector('button:nth-child(1)').classList.add('active')
-        menu.querySelector('button:nth-child(2)').classList.remove('active')
-        menu.querySelector('button:nth-child(3)').classList.remove('active')
-    } else if (evt.target.scrollLeft > window.innerWidth + (window.innerWidth / 2)) {
-        menu.querySelector('button:nth-child(2)').classList.remove('active')
-        menu.querySelector('button:nth-child(3)').classList.add('active')
-    }
-})</script>
 <body>
     <div class="content">
         <div class="con-user">
             <div class="avatar">
-                <img src="avatar.jpg" alt="profile picture">
+                <img src="avatar.png" alt="">
             </div>
             <div class="title">
                 <h1>
                     @___vins___
                 </h1>
                 <p>
-                    Frontend developer <br> co-founder <a target="_blank" href="https://spicedivine.com/">Spice Divine</a>
+                    Frontend developer, <br> co-founder <a target="_blank" href="https://spicedivine.com/">Spice Divine Inc.</a>
                 </p>
             </div>
         </div>
         <div class="con-menu">
-            <button onclick="handleClick(event, 'con-links')" class="active"> Links </button>
-            <button onclick="handleClick(event, 'con-posts')"> Posts </button>
+            <button onclick="handleClick(event, 'con-links')" class="active">
+                Links
+            </button>
+            <button onclick="handleClick(event, 'con-posts')">
+                Posts
+            </button>
         </div>
         <div class="con-contents">
             <div class="con-links">
                 <a target="_blank" href="https://www.instagram.com/___vins___/">
                     <i class='bx bxl-instagram'></i>
-                    <span>Instagram</span>
+                    <span>
+                        Instagram
+                    </span>
+                </a>
+                <a target="_blank" href="https://codepen.io/patelvinay/">
+                    <i class='bx bxl-codepen' ></i>
+                    <span>
+                        Codepen
+                    </span>
+                </a>
+                <a target="_blank" href="https://github.com/patelvinay/">
+                    <i class='bx bxl-github'></i>
+                    <span>
+                        Github
+                    </span>
                 </a>
                 <a target="_blank" href="https://www.facebook.com/patel.vinay.me">
-                    <i class='bx bxl-facebook'></i>
-                    <span>Facebook</span>
+                    <i class='bx bxl-facebook' ></i>
+                    <span>
+                        Facebook
+                    </span>
                 </a>
                 <a target="_blank" href="https://www.pinterest.ca/patel_vinay/">
-                    <i class='bx bxl-pinterest'></i>
-                    <span>Pinterest</span>
+                    <i class='bx bxl-pinterest' ></i>
+                    <span>
+                        Pinterest
+                    </span>
                 </a>
-                <a target="_blank" href="https://codepen.io/patelvinay">
-                    <i class='bx bxl-codepen'></i>
-                    <span>Codepen</span>
-                </a>
-                <a target="_blank" href="https://github.com/patelvinay">
-                    <i class='bx bxl-github'></i>
-                    <span>Github</span>
+                <a target="_blank" href="https://www.linkedin.com/in/vinay-patel-ac/">
+                    <i class='bx bxl-linkedin' ></i>
+                    <span>
+                        Pinterest
+                    </span>
                 </a>
             </div>
+
             <div class="con-posts">
-                <a href="https://www.instagram.com/p/BCfWE5fhsJp/" class="post" target="_blank">
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CECec3CidsL/">
                     <div class="con-file">
-                        <img src="login.png" alt="login">
+                        <video autoplay loop src="guide.mp4"></video>
                     </div>
+
                     <footer>
                         <h3>
-                            <i class="bx bxl-instagram"></i>
+                            <i class='bx bxl-instagram-alt'></i>
                             Instagram
                         </h3>
-                        <p>how to create login page</p>
+                        <p>
+                            Guide to become a frontend developer
+                        </p>
                     </footer>
 
                     <div class="effect"></div>
                 </a>
-                <!-- more posts to here -->
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CEAUoY-CKCH/">
+                    <div class="con-file">
+                        <img src="login.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create login page
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CD7kxchi0mj/">
+                    <div class="con-file">
+                        <img src="links.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create links page
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CD2w9uJiUFp/">
+                    <div class="con-file">
+                        <video autoplay loop src="file.mp4"></video>
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create input file
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CDwGYUjiiL7/">
+                    <div class="con-file">
+                        <video autoplay loop src="chat.mp4"></video>
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create sticky chat button
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CDr8n3Rix2Z/">
+                    <div class="con-file">
+                        <video autoplay loop src="social.mp4"></video>
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Social media buttons effect
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CDqBR8ZClPE/">
+                    <div class="con-file">
+                        <video autoplay loop src="dropdown.mp4"></video>
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create Dropdown
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CDnBBSpC33n/">
+                    <div class="con-file">
+                        <video autoplay loop src="button-loading.mp4"></video>
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create Button Loading
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CDkTkwTCiYL/">
+                    <div class="con-file">
+                        <img src="flexbox3.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Flexbox Guide part 3
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CDJZd0Jinp9/">
+                    <div class="con-file">
+                        <video autoplay loop src="cards.mp4"></video>
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Card Group Scrollable
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
             </div>
         </div>
     </div>
 </body>
+
+<!----------------------------------------------------------------------- css -------------------------------------------------------------------->
+<script>
+    const user = document.querySelector('.con-user')
+    const menu = document.querySelector('.con-menu')
+    const contents = document.querySelector('.con-contents')
+    const links = document.querySelector('.con-contents .con-links')
+    const posts = document.querySelector('.con-contents .con-posts')
+    window.addEventListener("load", function(event) {
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+        setTimeout(function () {
+        window.scrollTo(0, 1)
+        }, 0)
+        const h = window.innerHeight - menu.clientHeight - user.clientHeight
+        contents.style.height = `${h}px`
+        links.style.height = `${h}px`
+        posts.style.height = `${h}px`
+    })
+
+    function handleClick(evt, name) {
+        const items = document.querySelectorAll('.con-menu button')
+        const el = evt.target
+        items.forEach((item) => {
+            item.classList.remove('active')
+        })
+        el.classList.add('active')
+        const elScroll = document.querySelector(`.${name}`)
+        contents.scrollTo(elScroll.offsetLeft, 0)
+    }
+
+    contents.addEventListener('scroll', (evt) => {
+        if (evt.target.scrollLeft > window.innerWidth / 2 && evt.target.scrollLeft < window.innerWidth + (window.innerWidth / 2)) {
+            menu.querySelector('button:nth-child(1)').classList.remove('active')
+            menu.querySelector('button:nth-child(2)').classList.add('active')
+            menu.querySelector('button:nth-child(3)').classList.remove('active')
+        } else if (evt.target.scrollLeft < window.innerWidth / 2) {
+            menu.querySelector('button:nth-child(1)').classList.add('active')
+            menu.querySelector('button:nth-child(2)').classList.remove('active')
+            // menu.querySelector('button:nth-child(3)').classList.remove('active')
+        } else if (evt.target.scrollLeft > window.innerWidth + (window.innerWidth / 2)) {
+            menu.querySelector('button:nth-child(2)').classList.remove('active')
+            menu.querySelector('button:nth-child(3)').classList.add('active')
+        }
+    })
+</script>
 </html>
