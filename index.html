@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay Patel - Github - Instagram</title>
+    <link rel="stylesheet" href="style.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
 </head>
+<script src="/script.js"></script>
 <body>
-    
+    <div class="content">
+        <div class="con-user">
+            <div class="avatar">
+                <img src="avatar.jpg" alt="profile picture">
+            </div>
+            <div class="title">
+                <h1>
+                    @___vins___
+                </h1>
+                <p>
+                    Frontend developer <br> co-founder <a target="_blank" href="https://spicedivine.com/">Spice Divine</a>
+                </p>
+            </div>
+        </div>
+        <div class="con-menu">
+            <button onclick="handleClick(event, 'con-links')" class="active"> Links </button>
+            <button onclick="handleClick(event, 'con-posts')"> Posts </button>
+        </div>
+        <div class="con-contents">
+            <div class="con-links">
+                <a target="_blank" href="https://www.instagram.com/___vins___/">
+                    <i class='bx bxl-instagram'></i>
+                    <span>Instagram</span>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/patel.vinay.me">
+                    <i class='bx bxl-facebook'></i>
+                    <span>Facebook</span>
+                </a>
+                <a target="_blank" href="https://www.pinterest.ca/patel_vinay/">
+                    <i class='bx bxl-pinterest'></i>
+                    <span>Pinterest</span>
+                </a>
+                <a target="_blank" href="https://codepen.io/patelvinay">
+                    <i class='bx bxl-codepen'></i>
+                    <span>Codepen</span>
+                </a>
+                <a target="_blank" href="https://github.com/patelvinay">
+                    <i class='bx bxl-github'></i>
+                    <span>Github</span>
+                </a>
+            </div>
+            <div class="con-posts">
+                <a href="" class="post" target="_blank">
+                    <div class="con-file">
+                        <img src="login.png" alt="login">
+                    </div>
+                    <footer>
+                        <h3>
+                            <i class="bx bxl-instagram"></i>
+                            Instagram
+                        </h3>
+                        <p>how to create login page</p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <!-- more posts to here -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
